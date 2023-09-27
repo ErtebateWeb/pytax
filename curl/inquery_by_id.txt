@@ -1,0 +1,40 @@
+curl --location --request POST
+'https://tp.tax.gov.ir/req/api/tsp/sync/INQUIRY_BY_UID' \
+--header 'requestTraceId: 1655186523487' \
+--header 'timestamp: 1655186523487' \
+--header 'Authorization: Bearer
+eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoiVFNQIiwidG9rZW5JZCI6IjZlODlhZDQ3LT
+BlZjQtNDRmNC05YWZkLWI5MjdlNDM1ZmI2NyIsInBlcm1pc3Npb25zIjpbInRzcC5hc3luYy5mY
+XN0LWVucXVldWUiLCJ0c3AuYXN5bmMubm9ybWFsLWVucXVldWUiLCJ0c3Auc3luYyJdLCJwYWNr
+ZXRUeXBlcyI6WyJHRVRfRUNPTk9NSUNfQ09ERV9JTkZPUk1BVElPTiIsIklOUVVJUllfQllfVEl
+NRSIsIkdFVF9TRVJWRVJfSU5GT1JNQVRJT04iLCJJTlFVSVJZX0JZX1VJRCIsIklOUVVJUllfQl
+lfUkVGRVJFTkNFX05VTUJFUiIsIkdFVF9UT0tFTiIsIkdFVF9GSVNDQUxfSU5GT1JNQVRJT04iL
+CJJTlZPSUNFLlYwMSIsIklOUVVJUllfQllfVElNRV9SQU5HRSIsIkdFVF9TRVJWSUNFX1NUVUZGX0xJU1QiXSwiaXNzIjoiVEFYIE9yZ2FuaXphdGlvbiIsImlkIjoidGVzdC10c3AtaWQtMSIsImV
+4cCI6MTY1NTIwMDM4OCwiY3JlYXRlRGF0ZSI6MTY1NTE4NTk4ODQ5Mn0.SF06IpHsdSEKHDC0Vl
+X7oqgVITzy5S3ksehSHSbdrfwiaYxDT1mMn541TV8zP-HowhBs8u1fjs_S81kiZON4FA' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"time": 1,
+"packet": {
+"uid": null,
+"packetType": "INQUIRY_BY_UID",
+"retry": false,
+"data": [
+{"uid":"3b33584c-331e-4fbc-97ea-8d294a2009db","fiscalId":
+"AA56CD"}
+, {"uid":"8d595073-6349-423e-847f-83ae8a126394","fiscalId": "AA56CD"}
+, {"uid":"c0b286fd-b30f-49d7-97ca-640e91652f6f","fiscalId": "AA56CD"}
+],
+"encryptionKeyId": "",
+"symmetricKey": "",
+"iv": "",
+"fiscalId": "",
+"dataSignature":""
+},
+"signature":
+"Vny+goEh3eDH1HCijyvD7LLvUi+iAJEmgkl8jc1yp73SrNHz0RHaFbsgXICN5F52zV8HPfa3YI
+cddBi3ZjVNVs9RA+HsEHolavOecPLo9AOIGS7y+BtvV1FBKLTizbflpejprrSvN78ledJQmEsjg
+MMiVZA1zexQ8HU73/kf3fIyaviXXVyVcwM7DFqiyVdVV4IX3klJYVzyamUO8PDl9zTcwQMxwiSd
+QiQ/plZtx0wzP2UTyLmy47jskdJVjpDseM1iSEt6fy+18R98iqvBFiKi5njo5ONr+yTHQusTfwF
+X6I2uhYNML6/aC8EByFbTjVuJXyIOrM7CqnP77SbavA=="
+}'

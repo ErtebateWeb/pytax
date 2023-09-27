@@ -1,0 +1,102 @@
+curl --location --request POST
+''https://tp.tax.gov.ir/req/api/tsp/sync/INQUIRY_BY_TIME_RANGE' \
+--header 'requestTraceId: 1655187263981' \
+--header 'timestamp: 1655187263981' \
+--header 'Authorization: Bearer
+eyJhbGciOiJIUzUxMiJ9.eyJjbGllbnRUeXBlIjoiVFNQIiwidG9rZW5JZCI6IjZlODlhZDQ3LTBl
+ZjQtNDRmNC05YWZkLWI5MjdlNDM1ZmI2NyIsInBlcm1pc3Npb25zIjpbInRzcC5hc3luYy5mYXN0L
+WVucXVldWUiLCJ0c3AuYXN5bmMubm9ybWFsLWVucXVldWUiLCJ0c3Auc3luYyJdLCJwYWNrZXRUeX
+BlcyI6WyJHRVRfRUNPTk9NSUNfQ09ERV9JTkZPUk1BVElPTiIsIklOUVVJUllfQllfVElNRSIsIkd
+FVF9TRVJWRVJfSU5GT1JNQVRJT04iLCJJTlFVSVJZX0JZX1VJRCIsIklOUVVJUllfQllfUkVGRVJF
+TkNFX05VTUJFUiIsIkdFVF9UT0tFTiIsIkdFVF9GSVNDQUxfSU5GT1JNQVRJT04iLCJJTlZPSUNFL
+lYwMSIsIklOUVVJUllfQllfVElNRV9SQU5HRSIsIkdFVF9TRVJWSUNFX1NUVUZGX0xJU1QiXSwiaX
+NzIjoiVEFYIE9yZ2FuaXphdGlvbiIsImlkIjoidGVzdC10c3AtaWQtMSIsImV4cCI6MTY1NTIwMDM
+4OCwiY3JlYXRlRGF0ZSI6MTY1NTE4NTk4ODQ5Mn0.SF06IpHsdSEKHDC0VlX7oqgVITzy5S3ksehS
+HSbdrfwiaYxDT1mMn541TV8zP-HowhBs8u1fjs_S81kiZON4FA' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"time": 1,
+"packet": {
+"uid": null,
+"packetType": "INQUIRY_BY_TIME_RANGE",
+"retry": false,
+"data": {
+"startDate" :
+14010321,
+"endDate" :
+14010324
+},
+"encryptionKeyId": "",
+"symmetricKey": "",
+"iv": "",
+"fiscalId": "",
+"dataSignature":""
+},
+"signature":
+"I/xb+7NttCGMd2+vw3qOWrVlFTKRHgcXDB+TBn0kTLrLg8bFLvT+Q7XSUNfDAXi5wo+Sn5sDGpJ1
+jDF+nb66y3XnBP31ssbwkMTMemlNG1r6MWUednt6SYg2WNqqaDCsHUmfldfijVX7N/KUlmgnuVcMx
+oLEo8xf7o6UawWdYsOMrqbw2NWBZkrlYaFQQO9QdIzA5LxBjguumSW10D9fziFcyP+itTK9l/FUzZ
+j2uQCx/C/gzcWbZu/MdxMd1dZOy8MjWgCVccTe9oKPcVSKE8sWggiz1Vp6dClauekOeBbhjlFQh1E
+sOyxN10FVqbj2PIAP/im58LaKqe09GBbc4A=="
+}'
+
+
+
+
+
+
+response:
+
+
+{
+    "uid": null,
+"packetType": "INQUIRY_RESULT",
+"data": [
+{
+"referenceNumber": "967072eb-203e-428e-b9bb-6d2efdb9d356",
+"uid": "8a00f17a-bd35-46bc-ae52-3f61fab868c2",
+"status": "SUCCESS",
+"data": {
+"confirmationReferenceId": "d4c0e7e6-d42e-11ec-9d64-0242ac120002",
+"taxResult": "SUCCESS"
+},
+"packetType": "RECEIVE_INVOICE_CONFIRM",
+"fiscalId": "SAU5BC"
+}
+],
+"encryptionKeyId": null,
+"symmetricKey": null,
+"iv": null
+}
+
+
+
+
+
+response with error :
+
+
+
+{
+"uid": null,
+"packetType": "INQUIRY_RESULT",
+"data": [
+{
+"referenceNumber": "6df7b185-5254-4f58-b3e6-61169b5d5929",
+"uid": "3b33584c-331e-4fbc-97ea-8d294a2009db",
+"status": "FAILED",
+"data": {
+"confirmationReferenceId": null,
+"taxResult": "memory-id.is.null"
+},
+"packetType": "ERROR",
+"fiscalId": null
+}
+],
+"encryptionKeyId": null,
+"symmetricKey": null,
+"iv": null
+}
+
+
+

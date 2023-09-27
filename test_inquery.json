@@ -1,0 +1,86 @@
+{
+    "header" :
+    {
+    "taxid": "AA56CD0E0620002F2B4E78",
+    "indatim": "1655620821274",
+    "indati2m": "1655620821274",
+    "inty": 2,
+    "inno" : "0002F2B4E7",
+    "irtaxid" : null,
+    "inp": 1,
+    "ins" : 1,
+    "tins" : "32652362589632",
+    "tob" : 1,
+    "bid" : null,
+    "tinb" : null,
+    "sbc" : null,
+    "bpc" : null,
+    "bbc" : null,
+    "ft" : null,
+    "bpn" : null,
+    "scln" : null,
+    "scc" : null,
+    "crn" : null,
+    "billid" : null,
+    "tprdis" : 1000000,
+    "tdis" : 0,
+    "tadis" : 1000000,
+    "tvam" : 90000,
+    "todam" : 0,
+    "tbill" : 1090000,
+    "setm" : 1,
+    "cap" : 90000,
+    "insp" : 0,
+    "tvop" : 90000,
+    "dpvb" : null,
+    "tax17" : null
+    },
+    "body" : [
+    {
+    "sstid" : 2153265989636,
+    "sstt":"پاستیل میوه ای شیبابا",
+    "mu" : 96,
+    "am" : 1,
+    "fee" : 1000000,
+    "cfee" :null,
+    "cut" : null,
+    "exr" : null,
+    "prdis" : 1000000,
+    "dis" : 0,
+    "adis" : 1000000,
+    "vra" : 0.09,
+    "vam" : 90000,
+    "odt" : null,
+    "odr" : null,
+    "odam" : null,
+    "olt" : null,
+    "olr" : null,
+    "olam" : null,
+    "consfee" : null,
+    "spro" : null,
+    "bros" : null,
+    "tcpbs" : null,
+    "cop" : 90000,
+    "vop" : 90000,
+    "bsrn" : null,
+    "tsstam" : 1090000
+    }
+    ],
+    "payments" : [
+    {
+    "iinn" : 5646556,
+    "acn" : 5656565,
+    "trmn" : 54554224,
+    "trn" : 544542424,
+    "pcn" : "6037-9972-9856-9865",
+    "pid" : null,
+    "pdt" : 1655620821274 
+    }
+    ],
+    "extension": [
+    {
+    "key" : null,
+    "value" : null
+    }
+    ]
+}

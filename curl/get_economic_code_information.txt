@@ -1,0 +1,49 @@
+curl --location --request POST
+''https://tp.tax.gov.ir/req/api/tsp/sync/GET_ECONOMIC_CODE_INFORMATION' \
+--header 'requestTraceId: 1654521302712' \
+--header 'timestamp: 1654521302712' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"time": 1,
+"packet": {
+"uid": null,
+"packetType": "GET_ECONOMIC_CODE_INFORMATION",
+"retry": false,
+"data": {
+"economicCode":"12345678911234"
+},
+"encryptionKeyId": "",
+"symmetricKey": "",
+"iv": "",
+"fiscalId": "",
+"dataSignature":""
+}
+}'
+
+
+
+
+
+response :
+
+{
+"signature": null,
+"signatureKeyId": null,
+"timestamp": 1655191021181,
+"result": {
+"uid": null,
+"packetType": "ECONOMIC_CODE_INFORMATION",
+"data": {
+,"پیشخوان دولت" :"nameTrade"
+,"فعال" :"taxpayerStatus"
+,"حقوقی" :"taxpayerType"
+"postalcodeTaxpayer": "",
+"تهران" :"addressTaxpayer"
+},
+"encryptionKeyId": null,
+"symmetricKey": null,
+"iv": null
+}
+}
+
+
