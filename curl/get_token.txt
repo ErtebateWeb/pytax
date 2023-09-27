@@ -1,4 +1,4 @@
-curl --location --request POST
+curl --location --request POST \
 'https://tp.tax.gov.ir/req/api/tsp/sync/GET_TOKEN' \
 --header 'requestTraceId: 1655185848687' \
 --header 'timestamp: 1655185848687' \
